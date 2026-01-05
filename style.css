@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Quicksand:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(120deg, #fde2e4, #e2ece9);
+    min-height: 100vh;
+}
+
+/* TOPO */
+header {
+    background-color: #fff5f7;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    animation: cores 4s infinite alternate, flutuar 2s ease-in-out infinite;
+}
+
+/* animações */
+@keyframes cores {
+    0% { color: #d62828; }
+    50% { color: #6a4c93; }
+    100% { color: #f77f00; }
+}
+
+@keyframes flutuar {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-8px); }
+}
+
+/* MENU */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #6a4c93;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d62828;
+    background-color: #fde2e4;
+    padding: 6px 12px;
+    border-radius: 10px;
+}
+
+/* CONTEÚDO */
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+section {
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.card img {
+    width: 200px;
+    border-radius: 15px;
+}
+
+/* FORMULÁRIO */
+form input {
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: rgba(255,255,255,0.5);
+    text-align: center;
+    padding: 15px;
+    font-style: italic;
+}
+
+
+/* HISTÓRIA DO NATAL - apenas index */
+.historia-natal {
+    font-family: "Brush Script MT", cursive;
+    font-size: 1.6em;
+    color: #5a3e36;
+}
+
+/* RODAPÉ DO INDEX */
+.rodape-index {
+    font-family: "Lucida Handwriting", cursive;
+    background-color: rgba(255,255,255,0.5);
+    text-align: center;
+    padding: 15px;
+}
